@@ -57,7 +57,7 @@ async def process_file_endpoint(file: UploadFile = File(...)):
             result = document_parser.process_document(file_path)
         elif filename.endswith(('.png', '.jpg', '.jpeg')):
             result = image_ocr.process_image(file_path)
-        elif filename.endswith(('.mp3', '.wav', '.m4a')):
+        elif filename.endswith(('.mp3', '.wav', '.m4a', '.mp4', '.webm')):
             result = audio_processor.process_audio(file_path)
         else:
             result = {"status": "error", "message": "Formato no soportado en Sandbox"}
