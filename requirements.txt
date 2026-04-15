@@ -1,9 +1,6 @@
 openai
 python-dotenv
 requests
-fastapi
-uvicorn
-python-multipart
 pydantic
 beautifulsoup4
 PyPDF2
